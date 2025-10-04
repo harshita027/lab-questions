@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main (){ 
-    int a[50],n,i,j,last;
+    int a[50],n,i,last;
     printf("\nenter no. of elements:");
     scanf("%d",&n);
     
