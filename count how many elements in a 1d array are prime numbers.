@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+   int a[50],n,i,z,k;
+    printf("\nenter no. of elements:");
+    scanf("%d",&n);
+    
+    printf("\nenter number:");
+    
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+    n=a[i];
+    z=0;
+    
+    for(k=2;k<=n/2;k++)
+    {
+        if(n%k==0)
+        {
+         z=1;
+          break;
+        }
+    }
+     if (z==0)
+     {
+         printf("\nprime number : %d",n);
+     }
+     else
+     {
+         printf("\nnot a prime number:%d",n);
+     }
+    }
+   
+    return 0;
+}
