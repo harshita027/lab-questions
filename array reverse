@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+    int main() {
+    int a[50],n,i,last;
+    printf("\nenter no. of elements:");
+    scanf("%d",&n);
+    
+    printf("\nenter number:");
+    
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    last=a[4];
+    for (i=3;i>=0;i--)
+    a[i+1]=a[i];
+    a[0]=last;
+    
+    printf("\nmodified array is:");
+    
+    for (i=0;i<5;i++)
+    printf("%d",a[i]);
+     
+    return 0;
+}
